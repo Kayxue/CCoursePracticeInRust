@@ -2,8 +2,8 @@
 ## 題目
 Suppose that  
   
-xn = a × xn-1 + b × yn-1 + c  
-yn = r × xn-1 + s × yn-1 + t  
+xn = a × **x**n-1 + b × **y**n-1 + c  
+yn = r × **x**n-1 + s × **y**n-1 + t  
   
 where a, b, c, r, s, t are coefficients.
 Ask the user to input a number x1, y1, values of a, b, c, r, s, t, and the number of output terms n.  
