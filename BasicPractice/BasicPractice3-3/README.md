@@ -2,7 +2,7 @@
 ## 題目
 Suppose that  
   
-xn = a × **X**n-1 + b × **y**n-1 + c  
+xn = a × **x**n-1 + b × **y**n-1 + c  
 yn = r × **x**n-1 + s × **y**n-1 + t  
   
 where a, b, c, r, s, t are coefficients.
