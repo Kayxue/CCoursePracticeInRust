@@ -31,6 +31,7 @@ n-B means n digits in the guessing number are correct but in wrong positions.
 猜對了！你猜了 8 次。
 ```
 ## 備註
+此題目有分兩小題，一題Basic，一題Advanced，在此範例本人將兩題的程式碼都塞在同一個檔案裡，並且輸出和程式碼內皆有進行分隔
 ### [Basic]
 Finish the definition of separateDigit(), checkA(), and checkB().
 

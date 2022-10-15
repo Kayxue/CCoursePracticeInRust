@@ -51,6 +51,7 @@ fn ifNumberis4Digit(num: &i32) -> bool {
 }
 
 fn main() {
+    /*--------------Basic--------------*/
     println!("[Basic]");
     let mut hiddenNumberBasic: Vec<i8>;
     let mut guessBasic: Vec<i8>;
@@ -61,6 +62,7 @@ fn main() {
         checkA(&hiddenNumberBasic, &guessBasic),
         checkB(&hiddenNumberBasic, &guessBasic)
     );
+    /*--------------Advanced--------------*/
     println!("[Advanced]");
     let mut hiddenNumber: Vec<i8> = hiddenNumberGenerator();
     let mut guessNumber: Vec<i8> = vec![0; hiddenDigits];
