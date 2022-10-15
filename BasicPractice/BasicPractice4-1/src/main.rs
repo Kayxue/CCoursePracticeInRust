@@ -67,12 +67,12 @@ fn main() {
             print!("{{");
             for k in 0..matrixC[i].len() {
                 print!("{}", matrixC[i][k]);
-                if k != matrixC[i].len()-1 {
+                if k != matrixC[i].len() - 1 {
                     print!(", ");
                 }
             }
             print!("}}");
-            if i != matrixC.len()-1 {
+            if i != matrixC.len() - 1 {
                 print!(",\n");
             }
         }

@@ -15,7 +15,7 @@ fn main() {
         let num: i32 = (dateString.split("/").collect::<Vec<&str>>())[1]
             .parse()
             .unwrap();
-        count[(num-1) as usize] += 1;
+        count[(num - 1) as usize] += 1;
     }
     for (i, value) in count.into_iter().enumerate() {
         println!("{}月出生的有 {} 位", i + 1, value);

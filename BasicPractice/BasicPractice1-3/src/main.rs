@@ -4,9 +4,9 @@ use std::io::Write;
 fn main() {
     let mut numStr = String::new();
     print!("Please input a positive number: ");
-    io::stdout().flush().expect("Flush Failed");
-    io::stdin().read_line(&mut numStr).expect("Read Failed");
-    let num: i32 = numStr.trim().parse().expect("Parse Error");
+    io::stdout().flush().unwrap();
+    io::stdin().read_line(&mut numStr).unwrap();
+    let num: i32 = numStr.trim().parse().unwrap();
     for i in 1..=num {
         println!(
             "{} / {} = {:0.6}",

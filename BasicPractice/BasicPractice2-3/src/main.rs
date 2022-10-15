@@ -4,11 +4,11 @@ use std::io::Write;
 fn main() {
     let mut dataCountStr = String::new();
     print!("How many sets of test data: ");
-    io::stdout().flush().expect("Flush Error");
+    io::stdout().flush().unwrap();
     io::stdin()
         .read_line(&mut dataCountStr)
         .expect("Read Error");
-    let dataCount: i32 = dataCountStr.trim().parse().expect("Parsing Error");
+    let dataCount: i32 = dataCountStr.trim().parse().unwrap();
     for _i in 0..dataCount {
         let mut aStr = String::new();
         let mut digitsStr = String::new();
@@ -16,16 +16,16 @@ fn main() {
         let mut digits: i32 = -1;
         while a <= 0 || a >= 10 {
             print!("Input the value of a (1 ~ 9): ");
-            io::stdout().flush().expect("Flush Error");
-            io::stdin().read_line(&mut aStr).expect("Read Error");
-            a = aStr.trim().parse().expect("Parse Error");
+            io::stdout().flush().unwrap();
+            io::stdin().read_line(&mut aStr).unwrap();
+            a = aStr.trim().parse().unwrap();
             aStr = String::new();
         }
         while digits <= 0 || digits >= 10 {
             print!("Input the number of digits (1 ~ 9): ");
-            io::stdout().flush().expect("Flush Error");
-            io::stdin().read_line(&mut digitsStr).expect("Read Error");
-            digits = digitsStr.trim().parse().expect("Parse Error");
+            io::stdout().flush().unwrap();
+            io::stdin().read_line(&mut digitsStr).unwrap();
+            digits = digitsStr.trim().parse().unwrap();
             digitsStr = String::new();
         }
         print!("s = ");

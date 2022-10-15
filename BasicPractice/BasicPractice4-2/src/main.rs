@@ -21,7 +21,7 @@ fn main() {
             .collect::<Vec<_>>();
         let m: usize = splited[0].parse().unwrap();
         let n: usize = splited[1].parse().unwrap();
-        let p:usize=splited[2].parse().unwrap();
+        let p: usize = splited[2].parse().unwrap();
         let mut matrixA = vec![vec![0; n]; m];
         let mut matrixB = vec![vec![0; p]; n];
         let mut matrixC = vec![vec![0; p]; m];
@@ -59,8 +59,8 @@ fn main() {
         }
         for (x, arr) in &mut matrixC.iter_mut().enumerate() {
             for (y, value) in arr.iter_mut().enumerate() {
-                for k in 0..n{
-                    *value += matrixA[x][k]*matrixB[k][y];
+                for k in 0..n {
+                    *value += matrixA[x][k] * matrixB[k][y];
                 }
             }
         }
@@ -70,12 +70,12 @@ fn main() {
             print!("{{");
             for k in 0..matrixC[i].len() {
                 print!("{}", matrixC[i][k]);
-                if k != matrixC[i].len()-1 {
+                if k != matrixC[i].len() - 1 {
                     print!(", ");
                 }
             }
             print!("}}");
-            if i != matrixC.len()-1 {
+            if i != matrixC.len() - 1 {
                 print!(",\n");
             }
         }
