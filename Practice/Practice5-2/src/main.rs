@@ -3,12 +3,13 @@ use std::io;
 use std::io::Write;
 const hiddenDigits: usize = 4;
 
-fn seperateDigits(numStr: &str) -> Vec<i8> {
+fn seperateDigits(num: &i16) -> Vec<i8> {
+    let numStr: String = num.to_string();
     numStr.chars().map(|e| (e as i8) - 48).collect::<Vec<_>>()
 }
 
 fn hiddenNumberGenerator() -> Vec<i8> {
-    let num = rand::thread_rng().gen_range(1000..=9999).to_string();
+    let num = rand::thread_rng().gen_range(1000..=9999);
     seperateDigits(&num)
 }
 
@@ -46,8 +47,8 @@ fn hasDuplicateDigit(guess: &Vec<i8>) -> bool {
     false
 }
 
-fn ifNumberis4Digit(num: &i32) -> bool {
-    (num / 10000) as i16 == 0
+fn ifNumberis4Digit(num: &str) -> bool {
+    (*num).len() == 4
 }
 
 fn main() {
@@ -55,8 +56,8 @@ fn main() {
     println!("[Basic]");
     let mut hiddenNumberBasic: Vec<i8>;
     let mut guessBasic: Vec<i8>;
-    hiddenNumberBasic = seperateDigits(&(9527.to_string()));
-    guessBasic = seperateDigits(&(7523.to_string()));
+    hiddenNumberBasic = seperateDigits(&9527);
+    guessBasic = seperateDigits(&7523);
     println!(
         "{}A{}B",
         checkA(&hiddenNumberBasic, &guessBasic),
@@ -72,16 +73,16 @@ fn main() {
         print!("請猜一個 4 位數不重覆的數字：");
         io::stdout().flush().unwrap();
         io::stdin().read_line(&mut guessStr).unwrap();
-        let guessNum: i32 = guessStr.trim().parse().unwrap();
-        if guessNum <= 0 {
+        if guessStr.contains("-") {
             println!("只能猜正整數。");
             continue;
         }
-        if !ifNumberis4Digit(&guessNum) {
+        if !ifNumberis4Digit(&guessStr) {
             println!("只能猜 4 位數的數字。");
             continue;
         }
-        guessNumber = seperateDigits(&(guessStr.trim()));
+        let guessNum: i16 = guessStr.trim().parse().unwrap();
+        guessNumber = seperateDigits(&guessNum);
         if hasDuplicateDigit(&guessNumber) {
             println!("不能有重覆數字。");
             continue;
