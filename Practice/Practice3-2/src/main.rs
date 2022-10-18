@@ -13,7 +13,7 @@ fn main() {
     io::stdin().read_line(&mut baseStr).unwrap();
     let mut num: i32 = numStr.trim().parse().unwrap();
     let base: i32 = baseStr.trim().parse().unwrap();
-    maxBase = base.clone();
+    maxBase = base;
     while maxBase * base <= num {
         maxBase *= base;
     }
