@@ -5,9 +5,7 @@ fn main() {
     let mut dataCountStr = String::new();
     print!("How many sets of test data: ");
     io::stdout().flush().unwrap();
-    io::stdin()
-        .read_line(&mut dataCountStr)
-        .expect("Read Error");
+    io::stdin().read_line(&mut dataCountStr).unwrap();
     let dataCount: i32 = dataCountStr.trim().parse().unwrap();
     for _i in 0..dataCount {
         let mut aStr = String::new();
