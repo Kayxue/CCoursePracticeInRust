@@ -2,6 +2,24 @@
 ## 題目
 Write a function power(x, y) to calculate the value of xy,
 where x is a real number and y is a non-negative integer.
+
+Use the following main() to test your function.
+```cpp
+double myPower(double x, int y) {
+    // calculate xy here
+}
+
+int main() {
+    int ti, repeatTimes, year, month, day;
+    // get repeatTimes here
+    for (ti = 0; ti < repeatTimes; ti++) {
+        printf("\nx = "); scanf("%lf", &x);
+        printf("n = "); scanf("%d", &n);
+        printf("power(%f, %d) = %f\n", x, n, myPower(x, n));
+    }
+    return 0;
+}
+```
 ## 範例
 ```
 How many sets of test data: 4
