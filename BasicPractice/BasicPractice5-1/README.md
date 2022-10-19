@@ -29,7 +29,7 @@ Given a year, this function will return
 * `false` or 0 otherwise.  
 
 Use the following main() to test your function.
-```
+```cpp
 int main() {
     int ti, repeatTimes, year, month, day;
     // get repeatTimes here
