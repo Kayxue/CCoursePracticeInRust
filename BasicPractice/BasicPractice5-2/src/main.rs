@@ -26,8 +26,8 @@ fn main() {
             println!(
                 "x = {} PI, sin(x) = {:.6}, cos(x) = {:.6}",
                 i / n,
-                (i as f32 * PI/ n as f32).sin(),
-                (i as f32 * PI/ n as f32).cos()
+                (i as f32 * PI / n as f32).sin(),
+                (i as f32 * PI / n as f32).cos()
             );
         } else {
             let tgcd = gcd(&i, &n);
@@ -37,8 +37,8 @@ fn main() {
                 "x = {}/{} PI, sin(x) = {:.6}, cos(x) = {:.6}",
                 s,
                 t,
-                (s *PI/ t).sin(),
-                (s *PI/ t).cos()
+                (s * PI / t).sin(),
+                (s * PI / t).cos()
             );
         }
     }
