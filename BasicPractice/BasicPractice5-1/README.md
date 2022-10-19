@@ -18,13 +18,16 @@ Note that the rules of leap years are:
 * 逢四則閏 (4's multiples are leap years)
 * 逢百不閏 (but 100's multiples are not leap years)
 * 逢四百又閏 (but 400's multiples are leap years)  
+
 Write a function to decide if a given year is a leap, whose function prototype should be:  
 
 * `int isLeapYear(int year); // in C` or  
-* `bool isLeapYear(int year); // in C++`  
+* `bool isLeapYear(int year); // in C++`
+
 Given a year, this function will return  
 * `true` or 1 if it is a leap year;
 * `false` or 0 otherwise.  
+
 Use the following main() to test your function.
 ```
 int main() {
