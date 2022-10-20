@@ -1,7 +1,7 @@
 use std::io;
 use std::io::Write;
 
-const PI: f32 = 3.14159265358979323846;
+const PI: f64 = 3.14159265358979323846;
 
 fn gcd(a1: &i32, b1: &i32) -> i32 {
     let mut a = *a1;
@@ -26,13 +26,13 @@ fn main() {
             println!(
                 "x = {} PI, sin(x) = {:.6}, cos(x) = {:.6}",
                 i / n,
-                (i as f32 * PI / n as f32).sin(),
-                (i as f32 * PI / n as f32).cos()
+                (i as f64 * PI / n as f64).sin(),
+                (i as f64 * PI / n as f64).cos()
             );
         } else {
             let tgcd = gcd(&i, &n);
-            let s = (i / tgcd) as f32;
-            let t = (n / tgcd) as f32;
+            let s = (i / tgcd) as f64;
+            let t = (n / tgcd) as f64;
             println!(
                 "x = {}/{} PI, sin(x) = {:.6}, cos(x) = {:.6}",
                 s,
