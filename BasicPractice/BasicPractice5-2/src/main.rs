@@ -8,7 +8,7 @@ fn gcd(a1: &i32, b1: &i32) -> i32 {
     let mut b = *b1;
     let mut t: i32;
     while b != 0 {
-        t = b.clone();
+        t = b;
         b = a % b;
         a = t;
     }
