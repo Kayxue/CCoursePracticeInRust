@@ -14,14 +14,14 @@ fn main() {
         print!("Input values of m, n, p: ");
         io::stdout().flush().unwrap();
         io::stdin().read_line(&mut MNPInput).unwrap();
-        let splited = MNPInput
+        let splited: Vec<usize> = MNPInput
             .trim()
             .split(" ")
-            .map(|e| e.to_string())
+            .map(|e| e.parse().unwrap())
             .collect::<Vec<_>>();
-        let m: usize = splited[0].parse().unwrap();
-        let n: usize = splited[1].parse().unwrap();
-        let p: usize = splited[2].parse().unwrap();
+        let m: usize = splited[0];
+        let n: usize = splited[1];
+        let p: usize = splited[2];
         let mut matrixA = vec![vec![0; n]; m];
         let mut matrixB = vec![vec![0; p]; n];
         let mut matrixC = vec![vec![0; p]; m];
