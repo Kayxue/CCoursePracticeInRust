@@ -15,7 +15,7 @@ int checkPrize(int ticket[], int firstPrize[], int special);
 ```
 The prizes are defined as follows:  
 
-|Index|項目  Prize Item|獎金  Prize Amount|對中個數  Matched First-Prize|對中特別號  Matched Special範例  Examples|  
+|Index|項目  Prize Item|獎金  Prize Amount|對中個數  Matched First-Prize|對中特別號  Matched Special|範例  Examples|  
 |-----|-----|-----|-----|-----|-----|  
 |8|頭獎|19,100,192|6|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 7, 36, 10, 17, 34}|  
 |7|貳獎|1,569,878|5|1|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 43, 36, 10, 17, 34}|  
