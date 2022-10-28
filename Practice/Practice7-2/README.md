@@ -48,11 +48,11 @@ int main() {
     return 0;
 }
 ```
-Call `shuffling(a, ...)` to get a random permutation of 0 ~ 48 in `a[]`.
-Take the first 7 numbers of `a[]` as the Lottery First Prize Numbers. `// first[i] = a[i] + 1`
-Take the first 6 numbers of `a[]` as a Lottery ticket.
-Print out the numbers and the prize won by this ticket.
-Do it for 5 times.
+Call `shuffling(a, ...)` to get a random permutation of 0 ~ 48 in `a[]`.  
+Take the first 7 numbers of `a[]` as the Lottery First Prize Numbers. `// first[i] = a[i] + 1`  
+Take the first 6 numbers of `a[]` as a Lottery ticket.  
+Print out the numbers and the prize won by this ticket.  
+Do it for 5 times.  
 ## 範例
 ```
 Input the first-prize numbers: 7 17 34 8 10 36
