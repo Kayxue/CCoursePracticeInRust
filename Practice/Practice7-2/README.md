@@ -15,17 +15,17 @@ int checkPrize(int ticket[], int firstPrize[], int special);
 ```
 The prizes are defined as follows:  
 
-|Index|項目  Prize Item|獎金  Prize Amount|對中個數  Matched First-Prize|對中特別號  Matched Special範例  Examples|
-|-----|-----|-----|-----|-----|-----|
-|8|頭獎|19,100,192|6|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 7, 36, 10, 17, 34}|
-|7|貳獎|1,569,878|5|1|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 43, 36, 10, 17, 34}|
-|6|參獎|32,705|5|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 7, 36, 19, 17, 34}|
-|5|肆獎|9,781|4|1|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {43, 7, 36, 10, 6, 34}|
-|4|伍獎|1,286|4|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {25, 7, 36, 10, 17, 6}|
-|3|陸獎|1000|3|1|irst: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {18, 27, 36, 10, 17, 43}|
-|2|柒獎|400|2|1|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {28, 5, 10, 43, 17, 4}|
-|1|普獎|400|3|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 7, 23, 1, 49, 17}|
-
+|Index|項目  Prize Item|獎金  Prize Amount|對中個數  Matched First-Prize|對中特別號  Matched Special範例  Examples|  
+|-----|-----|-----|-----|-----|-----|  
+|8|頭獎|19,100,192|6|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 7, 36, 10, 17, 34}|  
+|7|貳獎|1,569,878|5|1|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 43, 36, 10, 17, 34}|  
+|6|參獎|32,705|5|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 7, 36, 19, 17, 34}|  
+|5|肆獎|9,781|4|1|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {43, 7, 36, 10, 6, 34}|  
+|4|伍獎|1,286|4|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {25, 7, 36, 10, 17, 6}|  
+|3|陸獎|1000|3|1|irst: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {18, 27, 36, 10, 17, 43}|  
+|2|柒獎|400|2|1|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {28, 5, 10, 43, 17, 4}|  
+|1|普獎|400|3|0|first: {7, 17, 34, 8, 10, 36} + 43 vs. ticket: {8, 7, 23, 1, 49, 17}|  
+  
 (Selected from the prize amounts of Big Lottery on 103/10/14, cf. http://www.taiwanlottery.com.tw/lotto/Lotto649/history.aspx)  
   
 Use the following main() to test your function.  
