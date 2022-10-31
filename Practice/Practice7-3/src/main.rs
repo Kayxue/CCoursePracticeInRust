@@ -1,4 +1,7 @@
-use std::{io, vec, Write};
+use std::{
+    io::{self, Write},
+    vec,
+};
 
 fn main() {
     let mut nStr = String::new();
