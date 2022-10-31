@@ -1,11 +1,11 @@
 # 第六次第二題
 ## 題目
-In card games, numbers of cards in the same suits or ranks is often important.
+In card games, numbers of cards in the same suits or ranks is often important.  
 Please write functions to count numbers of cards in the same suits or ranks as follows.
 
 * `suitCounting(card[], suit[])` to count the number of cards in each suit, i.e. ♣♦♥♠
-* `rankCounting(card[], rank[])` to count the number of cards in each rank, i.e. for A, 2, 3, ... , J, Q, K, and A again
-You need the following arrays in your main() function.
+* `rankCounting(card[], rank[])` to count the number of cards in each rank, i.e. for A, 2, 3, ... , J, Q, K, and A again  
+You need the following arrays in your main() function.  
 
 * `card[52]` to save the IDs of cards
 * `suitCount[4]` to save the number of cards in each suit
