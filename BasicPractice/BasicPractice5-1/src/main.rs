@@ -1,5 +1,4 @@
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
 const dayCount: [i8; 12] = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 

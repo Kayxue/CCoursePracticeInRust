@@ -1,6 +1,5 @@
 use rand::{self, thread_rng, Rng};
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
 fn checkPrize(ticket: &Vec<i32>, firstPrize: &Vec<i32>, special: &i32) -> i32 {
     let mut normalNumCount = 0;

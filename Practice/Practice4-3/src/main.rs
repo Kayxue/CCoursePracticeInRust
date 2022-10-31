@@ -1,5 +1,4 @@
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
 fn main() {
     let beginningDay = [20, 20, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];

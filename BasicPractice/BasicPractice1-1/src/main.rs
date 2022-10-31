@@ -1,5 +1,4 @@
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
 fn main() {
     let mut dataCountStr = String::new();

@@ -1,6 +1,5 @@
 use rand::{self, Rng};
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 const hiddenDigits: usize = 4;
 
 fn seperateDigits(num: &i16) -> Vec<i8> {

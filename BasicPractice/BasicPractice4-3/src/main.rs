@@ -1,5 +1,4 @@
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
 fn power(x: &f32, y: &i32) -> f32 {
     if *y == 0 {
