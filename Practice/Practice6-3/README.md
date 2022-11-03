@@ -8,8 +8,7 @@ The definitions of rankings are listed in the following table, the higher the st
 |-----|-----|-----|-----|
 |8|Straight Flush 同花順|A straight flush is a poker hand which contains five cards in sequence, all of the same suit, such as ♣8 ♣9 ♣10 ♣J ♣Q.|The hand is flush and straight.|
 |7|Four of a Kind 四條|Four of a kind is a poker hand such as ♣9 ♦9 ♥9 ♠9 ♣J which contains four cards of one rank, and an unmatched card of another rank.|Count the numbers of cards of each rank. Check if there are 4 cards in the same rank.|
-|6|Full House 葫蘆|A full house is a hand such as ♣3 ♦3 ♠3 ♦6 ♥6
-which contains three matching cards of one rank, and two matching cards of another rank.|Count the numbers of cards of each rank. Check if there are 3 cards in one rank and 2 cards in another.|
+|6|Full House 葫蘆|A full house is a hand such as ♣3 ♦3 ♠3 ♦6 ♥6 which contains three matching cards of one rank, and two matching cards of another rank.|Count the numbers of cards of each rank. Check if there are 3 cards in one rank and 2 cards in another.|
 |5|Flush 同花|A flush is a poker hand such as ♦4 ♦6 ♦7 ♦10 ♦Q which contains five cards of the same suit, not in rank sequence.|Count the numbers of cards of each suit. Check if there are 5 cards with the same suit.|
 |4|Straight 順|A straight is a poker hand such as ♠8 ♣9 ♦10 ♠J ♦Q which contains five cards of sequential rank but in more than one suit.|Count the numbers of cards of each rank. Check if there are 5 cards in sequential ranks.|
 |3|Three of a Kind 三條|Three of a kind is a poker hand such as ♠2 ♣6 ♦6 ♠6 ♠K which contains three cards of the same rank, plus two unmatched cards.|Count the numbers of cards of each rank. Check if there are 3 cards in the same rank.|
