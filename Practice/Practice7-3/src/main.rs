@@ -1,6 +1,5 @@
 use std::{
-    io::{self, Write},
-    vec,
+    io::{self, Write}
 };
 
 fn main() {
