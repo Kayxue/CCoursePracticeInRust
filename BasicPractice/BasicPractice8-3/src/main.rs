@@ -33,13 +33,7 @@ fn main() {
         let mut num5 = 0;
         let mut num1 = 0;
         unsafe {
-            pay_amount(
-                &mut dollar,
-                &mut num50 as *mut i32,
-                &mut num10 as *mut i32,
-                &mut num5 as *mut i32,
-                &mut num1 as *mut i32,
-            );
+            pay_amount(&mut dollar, &mut num50, &mut num10, &mut num5, &mut num1);
         }
         println!(
             "You need {} coin(s), including:",
