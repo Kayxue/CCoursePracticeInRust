@@ -1,9 +1,7 @@
 use std::io::{self, Write};
 
 fn duplicateStr(dest: &mut String, src: String, repeatTimes: i32) {
-    for i in 0..repeatTimes {
-        *dest += &src;
-    }
+    *dest = src.repeat(repeatTimes as usize);
 }
 
 fn main() {
